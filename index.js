@@ -10,7 +10,7 @@ const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017/test';
 app.get('/', (req, res) => {
   MongoClient.connect(mongoUrl, { useNewUrlParser: true }, (err, db) => {
     if (err) {
-      res.status(500).send('💥 BOOMS 💥: ' + err);
+      res.status(500).send('💥 Denis Kenzo 💥: ' + err);
     } else {
       res.send('New relic para monitoreo😎');
       db.close();

@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     if (err) {
       res.status(500).send('💥 BOOMS 💥: ' + err);
     } else {
-      res.send('Other text on ***index.js😎');
+      res.send('New relic para monitoreo😎');
       db.close();
     }
   });
